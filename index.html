@@ -1,0 +1,126 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>pokedex</title>
+</head>
+
+<body class="bg-danger p-1">
+    <header class="container-fluid bg-danger text-light text-center py-2">
+        <div class="row justify-content-between">
+            <div class="col-7 text-center">
+                <h1>Pokedex</h1>
+            </div>
+            <!-- Button trigger modal -->
+            <button type="button"
+                class="col-2 btn btn-outline-danger button-bevel text-right d-flex justify-content-end align-items-center text-light"
+                data-toggle="modal" data-target="#yourPokemon">
+                My Pokemon<i class="fas fa-adjust fa-2x text-light btn-shine ml-3"></i>
+            </button>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="yourPokemon" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header bg-danger border-success border-bottom">
+                        <h5 class="modal-title bg-danger" id="exampleModalLabel">Your
+                            Pokemon</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div id="my-pokedex" class="modal-body row">
+                        <!-- CONTENT IN THE MODAL -->
+
+
+
+                        <!-- CONTENT IN THE MODAL -->
+                    </div>
+                    <div class="modal-footer bg-Danger border-0 ">
+                        <button type="button" class="btn btn-block rounded-pill btn-outline-warning"
+                            data-dismiss="modal">close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container-fluid  shadow-lg ">
+        <div class="row bg-dark shadow-sm roudned rounded-lg screen-bevel">
+            <div class="col border text-center border-success mt-1 ml-1 mb-1 p-1">
+                <div id="wild-pokemon">
+
+                    <!-- Wild Pokemon Go here -->
+                    wild pokemon
+                </div>
+                <div>
+                     <!-- TODO talk to tim for this section -->
+                    <!-- <div class="row">
+                        <div class="col-5">
+                            <button class="btn btn-outline-success btn-block my-1 px-auto"
+                                onclick="app.pokemonController.changePage('back')"><i
+                                    class="fas fa-arrow-alt-circle-left"></i></button>
+                        </div>
+                        <div id="page-counter"
+                            class="col-2 text-success d-flex text-center justify-content-center align-items-center">1/10
+                        </div>
+                        <div class="col-5">
+                            <button class="btn btn-outline-success btn-block my-1 px-auto"
+                                onclick="app.pokemonController.changePage('forward')"><i
+                                    class="fas fa-arrow-alt-circle-right"></i>
+
+                            </button>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="col-5 border border-success mt-1 mr-1 mb-1 p-1 text-center text-success ">
+                <div id="active-pokemon" class="border border-success mb-auto py-3">
+                    Click on a Pokemon
+                    <!-- Active Pokemon drop here -->
+                    <!-- <h2 class=" col text-center rounded-bottom border-success border-bottom">pokemon name</h2>
+                        <img src="" alt="pokemon img" class="img img-fluid">
+                        <h5>weight</h5>
+                        <h4>types</h4>
+                        <button class="btn btn-outline-success btn-block"
+                        onclick="app.pokemonController.catchPokemon">catch</button> -->
+                    <!-- active Pokemon drop here -->
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <footer class="container-fluid bg-danger text-light">
+        <div class="row text-center">
+            <div class="col">
+                <p><small>Made with love by Codeworks</small></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
+    <script src="app/main.js" type="module"></script>
+</body>
+
+</html>
